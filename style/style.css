@@ -8,6 +8,16 @@
   color: white;
 }
 
+*::-moz-selection {
+  background: #e75454;
+  color: white;
+}
+
+*::selection {
+  background: #e75454;
+  color: white;
+}
+
 body {
   background: #181818;
   display: -webkit-box;
@@ -44,7 +54,7 @@ body::after {
 .wrapper .company {
   font-size: clamp(0.4rem, 3vw, 1rem);
   font-style: italic;
-  color: #6b8fdd;
+  color: #e75454;
 }
 
 .wrapper .subheading {
@@ -73,6 +83,6 @@ body::after {
 }
 
 .wrapper .social i:hover {
-  color: #6b8fdd;
+  color: #e75454;
 }
 /*# sourceMappingURL=style.css.map */
