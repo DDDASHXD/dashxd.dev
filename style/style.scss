@@ -33,18 +33,37 @@ body {
 .wrapper {
     z-index: 10;
     .company {
-        font-size: 10px;
+        //½font-size: 4vw;
+        font-size: clamp(0.4rem, 3vw, 1rem);
         font-style: italic;
         color: rgb(107, 143, 221);
     }
 
     .subheading {
-        font-size: 35px;
+        //font-size: 4.3rem;
+        font-size: clamp(2rem, 10vw, 4.3rem);
         font-weight: 800;
     }
 
     .mainheading {
-        font-size: 35px;
+        //font-size: 4.3rem;
+        font-size: clamp(2rem, 10vw, 4.3rem);
         font-weight: 800;
+    }
+
+    .social {
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+        font-size: 1.5rem;
+        
+        i {
+            cursor: pointer;
+            transition: all 0.1s ease;
+
+            &:hover {
+                color: rgb(107, 143, 221);
+            }
+        }
     }
 }

@@ -42,18 +42,37 @@ body::after {
 }
 
 .wrapper .company {
-  font-size: 10px;
+  font-size: clamp(0.4rem, 3vw, 1rem);
   font-style: italic;
   color: #6b8fdd;
 }
 
 .wrapper .subheading {
-  font-size: 35px;
+  font-size: clamp(2rem, 10vw, 4.3rem);
   font-weight: 800;
 }
 
 .wrapper .mainheading {
-  font-size: 35px;
+  font-size: clamp(2rem, 10vw, 4.3rem);
   font-weight: 800;
+}
+
+.wrapper .social {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.wrapper .social i {
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.wrapper .social i:hover {
+  color: #6b8fdd;
 }
 /*# sourceMappingURL=style.css.map */
